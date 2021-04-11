@@ -33,4 +33,14 @@ function information(){
     document.getElementById("error-text").innerText = "enter valid year"
   } 
 
-  else if ((female === false) && )
+  else if ((male === false) && (female === false)) {
+    document.getElementById("error-text").innerText = "add your gender"
+  }
+
+  else if (male === true) {
+    document.getElementById("displayAkan").innerHTML = "Your birthday was a" + days[dayOfWeek] + "." + "Your Akan name is" + maleNames[dayOfWeek]
+  }
+
+  else if (female === true) {
+    document.getElementById("displayAkan").innerHTML = "Your birthday was a" + days[dayOfWeek] + "." + "Your Akan name is" femaleNames[dayOfWeek]
+  }

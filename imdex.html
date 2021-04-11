@@ -22,53 +22,57 @@
           <h2>Enter your your gender and date of brith below to find out your Akan name!</h2>
       </div>
 
-      <div class="card-body">
-        <div class="row">
-          <div class="col-md-4">
-            <br>
-            <label for="gender">
-              <p>What is your gender?</p>
-              <p>Male <input type="radio" name="gender" value="male"></p>
-              <p>Female <input type="radio" name="gender" value="female"></p>
-            </label>
-          </div>
+      <form action="" class="user-input">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-4">
+              <br>
+              <label for="gender">
+                <p>What is your gender?</p>
+                <p>Male <input type="radio" name="gender" value="male"></p>
+                <p>Female <input type="radio" name="gender" value="female"></p>
+              </label>
+            </div>
 
-          <div class="col-md-6">
-            <br>
-            <label for="dayInput">
-              <p>DAY: <input type="number" name="birth-day" placeholder="DD" value="" min="1" max="31"></p>
-            </label>
+            <div class="col-md-6">
+              <br>
+              <label for="dayInput">
+                <p>DAY: <input type="number" name="birth-day" placeholder="DD" value="" min="1" max="31"></p>
+              </label>
 
-            <label for="monthInput">
-              <p>MONTH: <select name="">
-                <option>SELECT</option>
-                <option>January</option>
-                <option>February</option>
-                <option>March</option>
-                <option>April</option>
-                <option>May</option>
-                <option>June</option>
-                <option>July</option>
-                <option>August</option>
-                <option>September</option>
-                <option>October</option>
-                <option>November</option>
-                <option>December</option>
-              </select></p>
-            </label>
+              <label for="monthInput">
+                <p>MONTH: <select name="">
+                  <option>SELECT</option>
+                  <option>January</option>
+                  <option>February</option>
+                  <option>March</option>
+                  <option>April</option>
+                  <option>May</option>
+                  <option>June</option>
+                  <option>July</option>
+                  <option>August</option>
+                  <option>September</option>
+                  <option>October</option>
+                  <option>November</option>
+                  <option>December</option>
+                </select></p>
+              </label>
 
-            <label for="yearInput">
-              <p>YEAR: <input type="number" name="birth-year" placeholder="YYYY" value="" required></p>
-            </label>
+              <label for="yearInput">
+                <p>YEAR: <input type="number" name="birth-year" placeholder="YYYY" value="" required></p>
+              </label>
+            </div>
+            <div class="col-md-12">
+              <input type="submit" value="Click here to findout your Akan name!">
+            </div>
+
           </div>
         </div>
-      </div>
+      </form>
 
       <div class="card-footer">
-        <h1>run</h1>
         <h1>reset</h1>
       </div>
-
     </div>
   
   

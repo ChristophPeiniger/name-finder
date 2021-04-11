@@ -15,5 +15,22 @@ function information(){
   if (day <= 0 || day > 31) {
   document.getElementById("error-text").innerText = "Date has to be valid"
   }
-  else if((month === "April" || month === "June" || month === "September" || month === "November") && (day <= 0 || day > 30)) 
-}
+  else if((month === "April" || month === "June" || month === "September" || month === "November") && (day <= 0 || day > 30)) {
+  document.getElementById("error-text").innerText = "Date has to be valid"  
+  }
+  else if ((month === "February") && ( day <=0 || day > 29) && (year %4 ==0)) {
+    document.getElementById("error-text").innerText = "Date has to be valid"
+  }
+  else if ((month === "February") && ( day <=0 || day >28) && (year %4 !=0)) {
+    document.getElementById("error-text").innerText = "Date has to be valid"
+  }
+
+  else if (month === "SELECT"){
+    document.getElementById("error-text").innerText = "Select a month"
+  }
+
+  else if (year <= 1900 || year > 2021){
+    document.getElementById("error-text").innerText = "enter valid year"
+  } 
+
+  else if ((female === false) && )

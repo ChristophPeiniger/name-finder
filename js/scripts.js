@@ -5,6 +5,10 @@ function information(){
   var month=document.getElementById("monthInput").value;
   var year=document.getElementById("yearInput").value;
 
-  var 
+  var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+  var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+  var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
+  var birthDate = new Date(day+ '/' +month + '/' + year);
+  var dayOfWeek = birthDate.getDay();
 }

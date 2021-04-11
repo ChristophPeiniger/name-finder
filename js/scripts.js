@@ -38,11 +38,11 @@ function information(){
   }
 
   else if (male === true) {
-    document.getElementById("displayAkan").innerHTML = "Your birthday was a " + days[dayOfWeek] + " " + " and your Akan name is " + maleNames[dayOfWeek]
+    document.getElementById("displayAkan").innerText = "Your birthday was a " + days[dayOfWeek] + " " + " and your Akan name is " + maleNames[dayOfWeek]
   }
 
   else if (female === true) {
-    document.getElementById("displayAkan").innerHTML = "Your birthday was a " + days[dayOfWeek] + " " + " and your Akan name is " + femaleNames[dayOfWeek]
+    document.getElementById("displayAkan").innerText = "Your birthday was a " + days[dayOfWeek] + " " + " and your Akan name is " + femaleNames[dayOfWeek]
   }
 
 }

@@ -25,11 +25,11 @@ function information(){
     document.getElementById("error-text").innerText = "Date has to be valid"
   }
 
-  else if (month === "SELECT"){
+  else if (month === "SELECT") {
     document.getElementById("error-text").innerText = "Select a month"
   }
 
-  else if (year <= 1900 || year > 2021){
+  else if (year <= 1900 || year > 2021) {
     document.getElementById("error-text").innerText = "enter valid year"
   } 
 
@@ -38,9 +38,11 @@ function information(){
   }
 
   else if (male === true) {
-    document.getElementById("displayAkan").innerHTML = "Your birthday was a" + days[dayOfWeek] + "." + "Your Akan name is" + maleNames[dayOfWeek]
+    document.getElementById("displayAkan").innerHTML = "Your birthday was a " + days[dayOfWeek] + " " + " and your Akan name is " + maleNames[dayOfWeek]
   }
 
   else if (female === true) {
-    document.getElementById("displayAkan").innerHTML = "Your birthday was a" + days[dayOfWeek] + "." + "Your Akan name is" femaleNames[dayOfWeek]
+    document.getElementById("displayAkan").innerHTML = "Your birthday was a " + days[dayOfWeek] + " " + " and your Akan name is " + femaleNames[dayOfWeek]
   }
+
+}

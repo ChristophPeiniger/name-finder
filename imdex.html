@@ -22,84 +22,66 @@
           <h2>Enter your your gender and date of brith below to find out your Akan name!</h2>
       </div>
 
-      <div id="displayName">
-        <form action="">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-md-4">
-                <br>
-                <label for="gender">
-                  <p>What is your gender?</p>
-                  <p>Male <input type="radio" name="gender" value="male" id="maleInput"></p>
-                  <p>Female <input type="radio" name="gender" value="female" id="femaleInput"></p>
-                </label>
-              </div>
-
-              <div class="col-md-6">
-                <label for="dayInput" id="dayInput">
-                  <p>DAY: <input type="number" name="birth-day" placeholder="DD" value="" min="1" max="31"></p>
-                
-                </label>
-
-                <label for="monthInput" id="monthInput">
-                  <p>MONTH: <select name="">
-                    <option>SELECT</option>
-                    <option>January</option>
-                    <option>February</option>
-                    <option>March</option>
-                    <option>April</option>
-                    <option>May</option>
-                    <option>June</option>
-                    <option>July</option>
-                    <option>August</option>
-                    <option>September</option>
-                    <option>October</option>
-                    <option>November</option>
-                    <option>December</option>
-                  </select></p>
-                </label>
-
-                <label for="yearInput" id="yearInput">
-                  <p>YEAR: <input type="number" name="birth-year" placeholder="YYYY" value="" min="1900" max="2021" required></p>
-                </label>
-              </div>
-              <div class="col-md-12">
-                <input type="submit" value="Click here to find out your Akan name!">
-              </div>
-
-            </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-4">
+            <br>
+            <label for="gender">
+              <p>What is your gender?</p>
+              <p>Male <input type="radio" name="gender" value="male" id="maleInput" required></p>
+              <p>Female <input type="radio" name="gender" value="female" id="femaleInput" required></p>
+            </label>
           </div>
-        </form>
+
+          <div class="col-md-6">
+            <label for="dayInput">
+              <br>
+              <p>What is your date of birth?</p>
+              <p>DAY: <input type="number" id="dayInput" name="birth-day" placeholder="DD" value="" min="1" max="31"></p>
+                
+            </label>
+
+            <label for="monthInput">
+              <p>MONTH: <select name="" id="monthInput">
+                <option>SELECT</option>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+              </select></p>
+            </label>
+
+            <label for="yearInput">
+              <p>YEAR: <input type="number" id="yearInput" name="birth-year" placeholder="YYYY" value="" min="1900" max="2021" required></p>
+            </label>  
+          </div>
+
+          <div class="col-md-12">
+            <input type="submit" id="get-name" value="Click here to find out your Akan name!" onclick="information(); return false";>
+            <p id="error-text"></p>
+          </div>
+
+        </div>
       </div>
-
-      OUTPUT BOX
-      <p id="error-text">test</p>
-      <p id=""></p>
-
-
-
-
       <div class="card-footer">
-        <h1>reset</h1>
+        <div class="row">
+          <div class="col-md-12">
+            <h2 id="displayAkan"></h2>
+          </div>
+        </div>
+        
       </div>
+
     </div>
 
-
-    <div class="card">
-      <h1 id="displayAkan">test</h1>
-      <h1 id="error-text">test</h1>
-    </div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   </div>
   <script src="js/scripts.js"></script>

@@ -13,36 +13,35 @@ function information(){
   var dayOfWeek = birthDate.getDay();
 
   if (day <= 0 || day > 31) {
-  document.getElementById("error-text").innerText = "Date has to be valid"
+  document.getElementById("false-value").innerText = "Date has to be valid"
   }
   else if((month === "April" || month === "June" || month === "September" || month === "November") && (day <= 0 || day > 30)) {
-  document.getElementById("error-text").innerText = "Date has to be valid"  
+  document.getElementById("false-value").innerText = "Date has to be valid"  
   }
   else if ((month === "February") && ( day <=0 || day > 29) && (year %4 ==0)) {
-    document.getElementById("error-text").innerText = "Date has to be valid"
+    document.getElementById("false-value").innerText = "Date has to be valid"
   }
   else if ((month === "February") && ( day <=0 || day >28) && (year %4 !=0)) {
-    document.getElementById("error-text").innerText = "Date has to be valid"
+    document.getElementById("false-value").innerText = "Date has to be valid"
   }
 
-
-  else if (month === "SELECT") {
-    document.getElementById("error-text").innerText = "Select a month"
+  else if ((male === false) && (female === false)) {
+    document.getElementById("false-value").innerText = "add your gender"
   }
   else if (year <= 1900 || year > 2021) {
-    document.getElementById("error-text").innerText = "enter valid year"
+    document.getElementById("false-vlaue").innerText = "enter valid year"
   } 
-  else if ((male === false) && (female === false)) {
-    document.getElementById("error-text").innerText = "add your gender"
+  else if (month === "SELECT") {
+    document.getElementById("false-value").innerText = "Select a month"
   }
 
 
 
   else if (male === true) {
-    document.getElementById("displayAkan").innerText = "Your birthday was a " + days[dayOfWeek] + " " + " and your Akan name is " + maleNames[dayOfWeek]
+    document.getElementById("Akan").innerText = "Your birthday was a " + days[dayOfWeek] + " " + " and your Akan name is " + maleNames[dayOfWeek]
   }
   else if (female === true) {
-    document.getElementById("displayAkan").innerText = "Your birthday was a " + days[dayOfWeek] + " " + " and your Akan name is " + femaleNames[dayOfWeek]
+    document.getElementById("Akan").innerText = "Your birthday was a " + days[dayOfWeek] + " " + " and your Akan name is " + femaleNames[dayOfWeek]
   }
 
 }

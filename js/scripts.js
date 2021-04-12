@@ -25,22 +25,22 @@ function information(){
     document.getElementById("error-text").innerText = "Date has to be valid"
   }
 
+
   else if (month === "SELECT") {
     document.getElementById("error-text").innerText = "Select a month"
   }
-
   else if (year <= 1900 || year > 2021) {
     document.getElementById("error-text").innerText = "enter valid year"
   } 
-
   else if ((male === false) && (female === false)) {
     document.getElementById("error-text").innerText = "add your gender"
   }
 
+
+
   else if (male === true) {
     document.getElementById("displayAkan").innerText = "Your birthday was a " + days[dayOfWeek] + " " + " and your Akan name is " + maleNames[dayOfWeek]
   }
-
   else if (female === true) {
     document.getElementById("displayAkan").innerText = "Your birthday was a " + days[dayOfWeek] + " " + " and your Akan name is " + femaleNames[dayOfWeek]
   }
